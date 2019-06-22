@@ -18,7 +18,11 @@ const app = express();
 // Connect with MongoDb
 mongoose
   .connect(
-    'mongodb+srv://root:PARtizan1945@benleeds-j2qky.mongodb.net/BenLeeds_db?retryWrites=true',
+    'mongodb+srv://' +
+      process.env.MONGO_ATLAS_USERNAME +
+      ':' +
+      process.env.MONGO_ATLAS_KEY +
+      '@benleeds-j2qky.mongodb.net/BenLeeds_db?retryWrites=true',
     {
       useNewUrlParser: true,
       useCreateIndex: true
