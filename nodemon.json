@@ -1,7 +1,0 @@
-{
-  "env": {
-    "MONGO_ATLAS_USERNAME": "root",
-    "MONGO_ATLAS_KEY": "PARtizan1945",
-    "JWT_KEY": "scrtbl"
-  }
-}
